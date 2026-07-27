@@ -1,0 +1,15 @@
+export type Muscle =
+    | "Chest"
+    | "Back"
+    | "Shoulders"
+    | "Biceps"
+    | "Triceps"
+    | "Forearms"
+    | "Core"
+    | "Abs"
+    | "Hip Flexors"
+    | "Wrists"
+    | "Quads"
+    | "Hamstrings"
+    | "Glutes"
+    | "Calves";
