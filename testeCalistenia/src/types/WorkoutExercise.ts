@@ -3,5 +3,6 @@ export interface WorkoutExercise {
     sets: number;
     reps?: number;
     duration?: number;
+    time?: string;
     rest: number;
 }
