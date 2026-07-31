@@ -1,7 +1,7 @@
-import Exercises from "./pages/Exercises";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-    return <Exercises />;
+    return <AppRoutes />;
 }
 
 export default App;

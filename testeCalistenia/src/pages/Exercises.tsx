@@ -19,7 +19,7 @@ export default function Exercises() {
     });
     return (
         <main className="min-h-screen bg-gray-100">
-            <div className="mx-auto max-w-7xl p-8 bg-white shadow-md rounded-lg">
+            <div className="mx-auto max-w-7xl p-8 bg-white shadow-md rounded-lgj">
                 <SearchBar
                     value={search}
                     onChange={setSearch}
