@@ -2,9 +2,17 @@ import { useState } from "react";
 import { exercises } from "../data/exercises";
 import ExerciseCard from "../components/ExerciseCard/ExerciseCard";
 import SearchBar from "../components/SearchBar/SearchBar";
+import ExerciseRow from "../components/ExerciseRow/ExerciseRow";
 
 export default function Exercises() {
     const [search, setSearch] = useState("");
+    const [category, setCategory] = useState("All");
+    const pushExercises = exercises.filter((exercise) => exercise.category === "Push");
+    const pullExercises = exercises.filter((exercise) => exercise.category === "Pull");
+    const legsExercises = exercises.filter((exercise) => exercise.category === "Legs");
+    const coreExercises = exercises.filter((exercise) => exercise.category === "Core");
+    const skillExercises = exercises.filter((exercise) => exercise.category === "Skill");
+
     const filteredExercises = exercises.filter((exercise) => {
         const searchText = search.toLowerCase();
 
@@ -26,15 +34,35 @@ export default function Exercises() {
                     placeholder="Search exercises..."
                 />
 
-                <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {filteredExercises.map((exercise) => (
-                        <ExerciseCard
-                            key={exercise.id}
-                            exercise={exercise}
-                        />
-                    ))}
+                <div className="mt-8 space-y-10">
+
+                    <ExerciseRow
+                        title="Push"
+                        exercises={pushExercises}
+                    />
+
+                    <ExerciseRow
+                        title="Pull"
+                        exercises={pullExercises}
+                    />
+
+                    <ExerciseRow
+                        title="Legs"
+                        exercises={legsExercises}
+                    />
+
+                    <ExerciseRow
+                        title="Core"
+                        exercises={coreExercises}
+                    />
+
+                    <ExerciseRow
+                        title="Skill"
+                        exercises={skillExercises}
+                    />
+
                 </div>
             </div>
-        </main>
+        </main >
     );
 }

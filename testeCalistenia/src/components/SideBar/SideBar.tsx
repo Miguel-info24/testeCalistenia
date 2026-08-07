@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import { House,
+    Dumbbell,
+    Trophy,
+    NotebookPen,
+    ChartColumn,
+    User } from "lucide-react";
 
 export default function SideBar() {
     return (
@@ -9,19 +15,40 @@ export default function SideBar() {
 
             <nav className="flex flex-col">
 
-                <Link to="/" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Home</Link>
+                <Link to="/" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <House className="inline mr-2" size={20} />
+                    Home
+                </Link>
 
-                <Link to="/exercises" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Exercises</Link>
+                <Link to="/exercises" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <Dumbbell className="inline mr-2" size={20} />
+                    Exercises
+                </Link>
 
-                <Link to="/skills" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Skills</Link>
+                <Link to="/skills" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <Trophy className="inline mr-2" size={20} />
+                    Skills
+                </Link>
 
-                <Link to="/workouts" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Workouts</Link>
+                <Link to="/workouts" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <ChartColumn className="inline mr-2" size={20} />
+                    Workouts
+                </Link>
 
-                <Link to="/create" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Create</Link>
+                <Link to="/create" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <NotebookPen className="inline mr-2" size={20} />
+                    Create
+                </Link>
 
-                <Link to="/progress" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Progress</Link>
+                <Link to="/progress" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <ChartColumn className="inline mr-2" size={20} />
+                    Progress
+                </Link>
 
-                <Link to="/profile" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Profile</Link>
+                <Link to="/profile" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">
+                    <User className="inline mr-2" size={20} />
+                    Profile
+                </Link>
 
             </nav>
         </aside>
