@@ -7,21 +7,21 @@ export default function SideBar() {
                 Calisthenics
             </h1>
 
-            <nav className="flex flex-col gap-3">
+            <nav className="flex flex-col">
 
-                <Link to="/">Home</Link>
+                <Link to="/" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Home</Link>
 
-                <Link to="/exercises">Exercises</Link>
+                <Link to="/exercises" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Exercises</Link>
 
-                <Link to="/skills">Skills</Link>
+                <Link to="/skills" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Skills</Link>
 
-                <Link to="/workouts">Workouts</Link>
+                <Link to="/workouts" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Workouts</Link>
 
-                <Link to="/create">Create</Link>
+                <Link to="/create" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Create</Link>
 
-                <Link to="/progress">Progress</Link>
+                <Link to="/progress" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Progress</Link>
 
-                <Link to="/profile">Profile</Link>
+                <Link to="/profile" className="transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-zinc-800 px-4 py-2">Profile</Link>
 
             </nav>
         </aside>
